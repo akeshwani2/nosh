@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +23,26 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 40px;
 }
 
 .App-link {
@@ -35,4 +56,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.party-size-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.party-size-input button {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.party-size-input button:hover {
+  background-color: #555;
+}
+
+.party-size-input span {
+  font-size: 24px;
+  width: 40px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.submit-button, .search button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover, .search button:hover {
+  background-color: #45a049;
+}
+
+.search input[type="text"] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit; /* This will use the color of the parent element */
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  cursor: pointer;
 }

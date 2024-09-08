@@ -1,0 +1,18 @@
+.location-button {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  background-color: black;
+}
+
+.map {
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.where-text {
+    font-size: 40px;
+}
